@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "b73b7822-95f4-426d-99bd-715e63067f7a",
+		"name": "testesmundodotoner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27866256"
+	},
+	"item": [
+		{
+			"name": "todosprodutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteproduto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produtos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addproduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"cod_produto\": 1,\r\n        \"equipamentos\": \"E\",\r\n        \"suprimentos\": \" \",\r\n        \"nome\": \"Impressora Canon\",\r\n        \"descricao\": \"modeloxr5\",\r\n        \"serial\": \"wer456hj34\",\r\n        \"valor\": 700\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizaproduto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"cod_produto\": 4,\r\n        \"equipamentos\": \"E\",\r\n        \"suprimentos\": \" \",\r\n        \"nome\": \"Impressora HPn\",\r\n        \"descricao\": \"modeloxKKK\",\r\n        \"serial\": \"wer456hj34\",\r\n        \"valor\": 700\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
